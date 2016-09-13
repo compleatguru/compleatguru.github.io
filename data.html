@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Answer on Javascript</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+            <table border="1">
+                <tbody>
+                    <tr>
+                        <td class="property" data-value="first value">First Row</td>
+                    </tr>
+                    <tr>
+                        <td class="property" data-value="last value">Last Row</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>Please see from the console for answer</div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+        <script>
+            console.log("Value is ", jQuery("td.property:last").data("value"));
+        </script>
+    </body>
+</html>
